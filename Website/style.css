@@ -1,0 +1,15 @@
+.heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.text {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
