@@ -1,7 +1,11 @@
+// in ES6, you can use new keywords for variable declarations
+// 'const' is a way to make sure that you don't redeclare a variable
+// accidentally
 const canvas = document.querySelector('#checkerboard');
 
 const context = canvas.getContext('2d');
 
+// In ES6, you can use 'arrow' functions
 const getMousePos = (canvas, evt) => {
     const rect = canvas.getBoundingClientRect();
         return {
@@ -32,6 +36,8 @@ const makeRect = (x,y) => {
 
 canvas.addEventListener('click', (event)=>{
     const position = getMousePos(canvas, event);
+    // this is another ES6 syntax trick, where you can
+    // extract values from an object for more concise code
     const {x, y} = position;
     
     makeRect(x,y);
